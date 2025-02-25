@@ -1,4 +1,4 @@
-import { Sidebar } from '@/components'
+import { Sidebar } from '@/components/SideBar/Sidebar'
 import Link from 'next/link'
 
 export default function NotFound() {
@@ -10,13 +10,13 @@ export default function NotFound() {
         <Sidebar />
 
         <div className=" w-full text-slate-900">
-          
-        <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
-          <h1 className="text-9xl font-extrabold text-white tracking-widest">404</h1>
-          <div className="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">
-            Page Not Found
-          </div>
-          <button className="mt-5">
+
+          <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
+            <h1 className="text-9xl font-extrabold text-white tracking-widest">404</h1>
+            <div className="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">
+              Page Not Found
+            </div>
+            <button className="mt-5">
               <div
                 className="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
               >
@@ -29,7 +29,7 @@ export default function NotFound() {
                 </span>
               </div>
             </button>
-        </main>
+          </main>
 
         </div>
 
