@@ -1,4 +1,6 @@
-import { PokemonGrid } from "@/pokemons";
+
+
+import { WidgetPokemonGrid } from "@/components/dashboard/WidgetPokemonGrid";
 
 export const metadata = {
     title: 'Favoritos',
@@ -6,16 +8,11 @@ export const metadata = {
 };
 
 
-
-
 export default async function PokemonsPage() {
 
     return (
         <div className="flex flex-col">
-            <span className="text-5xl my-2">
-                Listado de Pokemons <small className="text-blue-500">Global state</small>
-                <PokemonGrid pokemons={[]}></PokemonGrid>
-            </span>
+            <WidgetPokemonGrid></WidgetPokemonGrid>
         </div>
     )
 }
